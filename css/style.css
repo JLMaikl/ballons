@@ -230,7 +230,7 @@ body {
   margin-bottom: 8rem;
 }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   color: #777777;
@@ -244,6 +244,7 @@ body {
           box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.5);
   position: relative;
   font-size: 2rem;
+  border: none;
 }
 
 .btn:hover {
@@ -282,6 +283,15 @@ body {
           animation: btnToUp 1s ease-out .7;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
+}
+
+.btn-brown, .btn-brown:link, .btn-brown:visited {
+  background: #A14f03;
+  color: #ffffff;
+}
+
+.btn-brown::after {
+  background: #A14f03;
 }
 
 .btn-text:link, .btn-text:visited {
@@ -598,6 +608,118 @@ body {
   background: linear-gradient(90deg, rgba(186, 133, 84, 0.7), rgba(0, 0, 0, 0.7));
 }
 
+.book {
+  height: 50rem;
+  background: linear-gradient(115deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 57%, rgba(186, 133, 84, 0.9) 57%, rgba(161, 79, 3, 0.8) 100%), url(../img/bg-form.jpg) center/cover no-repeat;
+  -webkit-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.5);
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.form {
+  width: 60%;
+  padding-top: 5rem;
+  padding-left: 5rem;
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.form__group:nth-child(4) {
+  margin-bottom: 4rem;
+}
+
+.form__input {
+  font-size: 1.6rem;
+  letter-spacing: .2rem;
+  font-weight: 400;
+  color: #000000;
+  padding: 2rem 0rem 2rem 2rem;
+  background: #ffffff;
+  border: none;
+  border-bottom: .3rem solid transparent;
+  border-radius: .5rem;
+  width: 55%;
+}
+
+.form__input:focus {
+  outline: none;
+  border-bottom: .32rem solid #66D763;
+  -webkit-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.5);
+}
+
+.form__input:focus:invalid {
+  border-bottom: .3rem solid #D76363;
+}
+
+.form__label {
+  font-size: 1.6rem;
+  letter-spacing: .2rem;
+  font-weight: 400;
+  display: block;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  -webkit-transition: all .7s;
+  transition: all .7s;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: none;
+  -webkit-transform: translateY(-3rem);
+          transform: translateY(-3rem);
+}
+
+.form__group-radio {
+  width: 40%;
+  display: inline-block;
+}
+
+.form__input-radio {
+  display: none;
+}
+
+.form__label-radio {
+  cursor: pointer;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.form__button-radio {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  border: 0.5rem solid #A14f03;
+  display: block;
+  position: absolute;
+  left: -2rem;
+  top: -.5rem;
+}
+
+.form__button-radio::after {
+  content: "";
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background: #A14f03;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.form__input-radio:checked ~ .form__label-radio .form__button-radio::after {
+  opacity: 1;
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -679,8 +801,8 @@ body {
 
 .section-adventure {
   padding: 21rem 0;
-  background: -webkit-gradient(linear, left top, right top, color-stop(0.03%, rgba(186, 133, 84, 0.7)), color-stop(99.94%, rgba(0, 0, 0, 0.7))), url(../img/section-adventure.jpg) center/cover no-repeat;
-  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url(../img/section-adventure.jpg) center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(186, 133, 84, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/section-adventure.jpg) center/cover no-repeat;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7), rgba(0, 0, 0, 0.7)), url(../img/section-adventure.jpg) center/cover no-repeat;
   -webkit-transform: skewY(7deg);
           transform: skewY(7deg);
 }
@@ -698,5 +820,11 @@ body {
 .section-feedBack {
   padding: 8rem 0;
   position: relative;
+}
+
+.section-book {
+  padding: 10rem;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(186, 133, 84, 0.7)), to(rgba(161, 79, 3, 0.7)));
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7), rgba(161, 79, 3, 0.7));
 }
 /*# sourceMappingURL=style.css.map */
