@@ -103,25 +103,25 @@ html {
   font-size: 62.5%;
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   html {
     font-size: 56.25%;
   }
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   html {
     font-size: 50%;
   }
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   html {
     font-size: 30%;
   }
 }
 
-@media (min-width: 1800px) {
+@media only screen and (min-width: 1800px) {
   html {
     font-size: 75%;
   }
@@ -170,13 +170,13 @@ body {
           backface-visibility: hidden;
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .title-first__main {
     font-size: 4rem;
   }
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .title-first__main {
     font-size: 3.6rem;
     letter-spacing: .5rem;
@@ -203,14 +203,14 @@ body {
   margin-bottom: 6.5rem;
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .title-first__secondary {
     font-size: 3.5rem;
     margin-bottom: 3.5rem;
   }
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .title-first__secondary {
     font-size: 3.2rem;
     letter-spacing: .2rem;
@@ -233,13 +233,13 @@ body {
           backface-visibility: hidden;
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .title-secondary {
     font-size: 3rem;
   }
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .title-secondary {
     letter-spacing: .6rem;
   }
@@ -262,7 +262,7 @@ body {
   font-weight: 700;
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .title-third {
     font-size: 1.8rem;
   }
@@ -275,7 +275,7 @@ body {
   font-weight: 400;
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .paragraph {
     font-size: 1.5rem;
   }
@@ -306,7 +306,7 @@ body {
   margin-bottom: 5rem;
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .margin-bottom-50px {
     margin-bottom: 7rem;
   }
@@ -316,7 +316,7 @@ body {
   margin-bottom: 8rem;
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .margin-bottom-80px {
     margin-bottom: 5rem;
   }
@@ -339,14 +339,14 @@ body {
   border: none;
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .btn, .btn:link, .btn:visited {
     font-size: 1.8rem;
     padding: 1.2rem 3.7rem;
   }
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .btn, .btn:link, .btn:visited {
     padding: 2rem 5rem;
   }
@@ -502,7 +502,7 @@ body {
   position: relative;
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 900px), (hover: none) {
   .card-tour {
     height: auto;
   }
@@ -525,14 +525,14 @@ body {
   overflow: hidden;
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 900px), (hover: none) {
   .card-tour__side {
     height: auto;
     position: relative;
   }
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px), (hover: none) {
   .card-tour__side_front {
     padding-bottom: 13rem;
   }
@@ -544,7 +544,7 @@ body {
   background: linear-gradient(120deg, #ba8554, #A14f03);
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px), (hover: none) {
   .card-tour__side_back {
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
@@ -561,7 +561,7 @@ body {
           transform: rotateY(-180deg);
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .card-tour:hover .card-tour__side_front {
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
@@ -592,7 +592,7 @@ body {
   background: #ba8554 url(../img/card-3.jpg) center/cover no-repeat;
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 900px), (hover: none) {
   .card-tour__img {
     height: 30rem;
   }
@@ -609,7 +609,7 @@ body {
   right: 0;
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .card-tour__title {
     top: 25rem;
     font-size: 3.8rem;
@@ -630,7 +630,7 @@ body {
   padding-top: 0.3rem;
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .card-tour__span_2 {
     top: 4.4rem;
   }
@@ -655,13 +655,13 @@ body {
   margin-bottom: 2rem;
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .card-tour__descr ul li {
     font-size: 1.5rem;
   }
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .card-tour__descr ul li {
     font-size: 2rem;
   }
@@ -675,7 +675,7 @@ body {
           transform: translate(-50%, -50%);
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px), (hover: none) {
   .card-tour__backside-box {
     position: relative;
     top: 0%;
@@ -715,7 +715,7 @@ body {
           transform: skewX(330deg);
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .feedBack-card {
     -webkit-transform: skewX(350deg);
             transform: skewX(350deg);
@@ -728,7 +728,7 @@ body {
           transform: skewX(-330deg);
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .feedBack-card > * {
     -webkit-transform: skewX(-350deg);
             transform: skewX(-350deg);
@@ -749,7 +749,7 @@ body {
   position: relative;
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .feedBack-card__img {
     float: none;
     margin: 0 auto;
@@ -826,7 +826,7 @@ body {
   overflow: hidden;
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .book {
     background: linear-gradient(115deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 57%, rgba(186, 133, 84, 0.9) 507%, rgba(161, 79, 3, 0.8) 100%), url(../img/bg-form.jpg) center/cover no-repeat;
   }
@@ -838,7 +838,7 @@ body {
   padding-left: 5rem;
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .form {
     width: 100%;
     padding-top: 3rem;
@@ -854,7 +854,7 @@ body {
   margin-bottom: 4rem;
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .form__group:not(:last-child) {
     margin-bottom: 0rem;
   }
@@ -876,7 +876,7 @@ body {
   width: 75%;
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .form__input {
     width: 90%;
     -webkit-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.5);
@@ -921,7 +921,7 @@ body {
   margin-right: 5rem;
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .form__group-radio {
     display: block;
   }
@@ -981,7 +981,7 @@ body {
   margin-bottom: 8rem;
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .row:not(:last-child) {
     margin-bottom: 4rem;
   }
@@ -993,13 +993,13 @@ body {
   clear: both;
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .row {
     max-width: 90.1rem;
   }
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .row {
     max-width: 60rem;
   }
@@ -1013,7 +1013,7 @@ body {
   width: calc((100% - 2 * 6rem) / 3);
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .col-1-of-3 {
     width: calc((100% - 2 * 2rem) / 3);
   }
@@ -1031,7 +1031,7 @@ body {
   width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem);
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .col-2-of-4 {
     width: calc(2 * ((100% - 3 * 2rem) / 4) + 6rem);
   }
@@ -1049,13 +1049,13 @@ body {
   margin-right: 6rem;
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   [class^="col-"]:not(:last-child) {
     margin-right: 2rem;
   }
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   [class^="col-"] {
     width: 100%;
     margin-right: 0 !important;
@@ -1070,6 +1070,13 @@ body {
   background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url(../img/header-background.jpg) center/cover no-repeat;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 81%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 81%);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 670px), (min-resolution: 192dpi) and (min-width: 670px), (min-width: 1340px) {
+  .header {
+    background: -webkit-gradient(linear, left top, right top, color-stop(0.03%, rgba(0, 0, 0, 0.7)), color-stop(99.94%, rgba(255, 255, 255, 0.7))), url(../img/header-background-big.jpg) center/cover no-repeat;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0.03%, rgba(255, 255, 255, 0.7) 99.94%), url(../img/header-background-big.jpg) center/cover no-repeat;
+  }
 }
 
 .header__logo {
@@ -1090,7 +1097,7 @@ body {
   text-align: center;
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .header__box {
     top: 50%;
   }
@@ -1118,13 +1125,13 @@ body {
   margin-right: 5rem;
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .footer__item:not(:last-child) {
     margin-right: 1.6rem;
   }
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .footer__item {
     margin: 0;
     padding: 2rem;
@@ -1172,13 +1179,13 @@ body {
   margin-right: 5rem;
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .footer__item:not(:last-child) {
     margin-right: 1.6rem;
   }
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .footer__item {
     margin: 0;
     padding: 2rem;
@@ -1356,13 +1363,13 @@ body {
   margin-bottom: 20rem;
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .section-about {
     margin-bottom: 13rem;
   }
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .section-about {
     margin-bottom: 40rem;
   }
@@ -1381,7 +1388,7 @@ body {
           transform: skewY(-7deg);
 }
 
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .section-adventure {
     padding: 15rem 0;
   }
@@ -1403,7 +1410,7 @@ body {
   background: linear-gradient(90deg, rgba(186, 133, 84, 0.7), rgba(161, 79, 3, 0.7));
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .section-book {
     padding: 4rem;
   }
